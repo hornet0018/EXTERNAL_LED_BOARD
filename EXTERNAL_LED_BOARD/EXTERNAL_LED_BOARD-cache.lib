@@ -1,35 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Conn_01x05_Male
-#
-DEF Connector_Conn_01x05_Male J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Conn_01x05_Male" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S 34 -195 0 -205 1 1 6 F
-S 34 -95 0 -105 1 1 6 F
-S 34 5 0 -5 1 1 6 F
-S 34 105 0 95 1 1 6 F
-S 34 205 0 195 1 1 6 F
-P 2 1 1 6 50 -200 34 -200 N
-P 2 1 1 6 50 -100 34 -100 N
-P 2 1 1 6 50 0 34 0 N
-P 2 1 1 6 50 100 34 100 N
-P 2 1 1 6 50 200 34 200 N
-X Pin_1 1 200 200 150 L 50 50 1 1 P
-X Pin_2 2 200 100 150 L 50 50 1 1 P
-X Pin_3 3 200 0 150 L 50 50 1 1 P
-X Pin_4 4 200 -100 150 L 50 50 1 1 P
-X Pin_5 5 200 -200 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_C_Small
 #
 DEF Device_C_Small C 0 10 N N 1 F N
@@ -63,25 +34,42 @@ C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
-# WS2812-2020_WS2812-2020
+# SamacSys_Parts_B03B-PASK-1__LF___SN_
 #
-DEF WS2812-2020_WS2812-2020 U 0 40 Y Y 1 L N
-F0 "U" -401 301 50 H V L BNN
-F1 "WS2812-2020_WS2812-2020" -401 -401 50 H V L BNN
-F2 "LED_WS2812-2020" 0 0 50 H I L BNN
-F3 "" 0 0 50 H I L BNN
-F4 "Manufacturer Recommendations" 0 0 50 H I L BNN "STANDARD"
-F5 "Worldsemi" 0 0 50 H I L BNN "MANUFACTURER"
+DEF SamacSys_Parts_B03B-PASK-1__LF___SN_ J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_B03B-PASK-1__LF___SN_" 650 200 50 H V L CNN
+F2 "B03BPASK1LFSN" 650 100 50 H I L CNN
+F3 "http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf" 650 0 50 H I L CNN
+F4 "JST Polyamide Series, 2mm Pitch 3 Way 1 Row Straight PCB Header, Solder Termination, 3A" 650 -100 50 H I L CNN "Description"
+F5 "7" 650 -200 50 H I L CNN "Height"
+F6 "JST (JAPAN SOLDERLESS TERMINALS)" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "B03B-PASK-1 (LF) (SN)" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
-P 2 0 0 16 -400 -300 -400 -200 N
-P 2 0 0 16 -400 -200 -400 300 N
-P 2 0 0 16 -400 300 400 300 N
-P 2 0 0 16 400 -300 -400 -300 N
-P 2 0 0 16 400 300 400 -300 N
-X DO 1 600 0 200 L 40 40 0 0 O
-X GND 2 600 -200 200 L 40 40 0 0 W
-X DI 3 -600 0 200 R 40 40 0 0 I
-X VDD 4 600 200 200 L 40 40 0 0 W
+P 5 0 1 6 200 100 600 100 600 -300 200 -300 200 100 N
+X 1 1 0 -200 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X 3 3 0 0 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_WS2812C-2020
+#
+DEF SamacSys_Parts_WS2812C-2020 LED 0 30 Y Y 1 F N
+F0 "LED" 850 300 50 H V L CNN
+F1 "SamacSys_Parts_WS2812C-2020" 850 200 50 H V L CNN
+F2 "WS2812C2020" 850 100 50 H I L CNN
+F3 "http://www.world-semi.com/DownLoadFile/139" 850 0 50 H I L CNN
+F4 "Intelligent control LED integrated light source" 850 -100 50 H I L CNN "Description"
+F5 "0.84" 850 -200 50 H I L CNN "Height"
+F6 "Worldsemi" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "WS2812C-2020" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
+X DO 1 1000 -100 200 L 50 50 0 0 P
+X GND 2 1000 0 200 L 50 50 0 0 P
+X DI 3 0 0 200 R 50 50 0 0 P
+X VDD 4 0 -100 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

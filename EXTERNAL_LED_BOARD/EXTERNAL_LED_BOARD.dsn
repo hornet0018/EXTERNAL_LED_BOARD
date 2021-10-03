@@ -1,0 +1,257 @@
+(pcb E:\github\EXTERNAL_LED_BOARD\EXTERNAL_LED_BOARD\EXTERNAL_LED_BOARD.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(5.1.10)-1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  145542 -90524.4  145874 -90580.7  146197 -90673.9  146508 -90802.6
+            146802 -90965.3  147076 -91160  147327 -91384.2  147551 -91635
+            147746 -91909.4  147909 -92203.9  148038 -92514.7  148131 -92837.9
+            148187 -93169.6  148206 -93505.5  148206 -104506  148187 -104841
+            148131 -105173  148038 -105496  147909 -105807  147746 -106102
+            147551 -106376  147327 -106627  147076 -106851  146802 -107046
+            146508 -107208  146197 -107337  145874 -107430  145542 -107487
+            145206 -107506  124206 -107506  123870 -107487  123538 -107430
+            123215 -107337  122904 -107208  122610 -107046  122336 -106851
+            122085 -106627  121861 -106376  121666 -106102  121503 -105807
+            121374 -105496  121281 -105173  121225 -104841  121206 -104506
+            121206 -93505.5  121225 -93169.6  121281 -92837.9  121374 -92514.7
+            121503 -92203.9  121666 -91909.4  121861 -91635  122085 -91384.2
+            122336 -91160  122610 -90965.3  122904 -90802.6  123215 -90673.9
+            123538 -90580.7  123870 -90524.4  124206 -90505.5  145206 -90505.5
+            145542 -90524.4)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component "footprint:LED_WS2812-2020"
+      (place U3 139106 -99005.5 front 90 (PN "WS2812-2020"))
+      (place U2 134706 -99005.5 front 90 (PN "WS2812-2020"))
+    )
+    (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (place C3 141306 -99005.5 front 270 (PN C_Small))
+      (place C2 136906 -99005.5 front 270 (PN C_Small))
+    )
+    (component footprint:B03BPASK1LFSN
+      (place J2 134706 -104661 back 180 (PN Conn_01x03_Male))
+      (place J1 134706 -93370.4 back 180 (PN Conn_01x03_Male))
+    )
+    (component "footprint:LED_WS2812-2020::1"
+      (place U1 130306 -99005.5 front 90 (PN "WS2812-2020"))
+    )
+    (component Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder::1
+      (place C1 132506 -99005.5 front 270 (PN C_Small))
+    )
+    (component MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom
+      (place H3 124406 -104306 front 0 (PN MountingHole))
+      (place H4 145006 -104306 front 0 (PN MountingHole))
+      (place H2 145006 -93705.5 front 0 (PN MountingHole))
+      (place H1 124406 -93705.5 front 0 (PN MountingHole))
+    )
+  )
+  (library
+    (image "footprint:LED_WS2812-2020"
+      (outline (path signal 200  -1667.04 630  -1718.52 540.837  -1821.48 540.837  -1872.96 630
+            -1821.48 719.163  -1718.52 719.163  -1667.04 630))
+      (outline (path signal 127  -300 -1000  300 -1000))
+      (outline (path signal 127  -300 1000  300 1000))
+      (outline (path signal 200  -1667.04 630  -1718.52 540.837  -1821.48 540.837  -1872.96 630
+            -1821.48 719.163  -1718.52 719.163  -1667.04 630))
+      (outline (path signal 50  -1515 1250  -1515 -1250))
+      (outline (path signal 50  1515 1250  -1515 1250))
+      (outline (path signal 50  1515 -1250  1515 1250))
+      (outline (path signal 50  -1515 -1250  1515 -1250))
+      (outline (path signal 127  -1100 -1000  -1100 1000))
+      (outline (path signal 127  1100 -1000  -1100 -1000))
+      (outline (path signal 127  1100 1000  1100 -1000))
+      (outline (path signal 127  -1100 1000  1100 1000))
+      (pin Rect[T]Pad_700x700_um 2 -915 -550)
+      (pin Rect[T]Pad_700x700_um 1 -915 550)
+      (pin Rect[T]Pad_700x700_um 4 915 550)
+      (pin Rect[T]Pad_700x700_um 3 915 -550)
+    )
+    (image Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder
+      (outline (path signal 50  1650 -730  -1650 -730))
+      (outline (path signal 50  1650 730  1650 -730))
+      (outline (path signal 50  -1650 730  1650 730))
+      (outline (path signal 50  -1650 -730  -1650 730))
+      (outline (path signal 120  -171.267 -510  171.267 -510))
+      (outline (path signal 120  -171.267 510  171.267 510))
+      (outline (path signal 100  800 -400  -800 -400))
+      (outline (path signal 100  800 400  800 -400))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  -800 -400  -800 400))
+      (pin RoundRect[T]Pad_1050x950_238.404_um 2 875 0)
+      (pin RoundRect[T]Pad_1050x950_238.404_um 1 -875 0)
+    )
+    (image footprint:B03BPASK1LFSN
+      (outline (path signal 200  -4350 2650  3650 2650))
+      (outline (path signal 200  3650 2650  3650 -2650))
+      (outline (path signal 200  3650 -2650  -4350 -2650))
+      (outline (path signal 200  -4350 -2650  -4350 2650))
+      (outline (path signal 100  -5350 3650  5350 3650))
+      (outline (path signal 100  5350 3650  5350 -3650))
+      (outline (path signal 100  5350 -3650  -5350 -3650))
+      (outline (path signal 100  -5350 -3650  -5350 3650))
+      (outline (path signal 100  2650 2650  -4350 2650))
+      (outline (path signal 100  -4350 2650  -4350 -2650))
+      (outline (path signal 100  -4350 -2650  3650 -2650))
+      (outline (path signal 100  3650 -2650  3650 1250))
+      (outline (path signal 200  4250 250  4250 250))
+      (outline (path signal 200  4250 50  4250 50))
+      (pin Round[A]Pad_1300_um 3 -2350 250)
+      (pin Round[A]Pad_1300_um 2 -350 250)
+      (pin Round[A]Pad_1300_um 1 1650 250)
+      (keepout "" (circle F.Cu 1200 3150 1950))
+      (keepout "" (circle B.Cu 1200 3150 1950))
+    )
+    (image "footprint:LED_WS2812-2020::1"
+      (outline (path signal 127  -1100 1000  1100 1000))
+      (outline (path signal 127  1100 1000  1100 -1000))
+      (outline (path signal 127  1100 -1000  -1100 -1000))
+      (outline (path signal 127  -1100 -1000  -1100 1000))
+      (outline (path signal 50  -1515 -1250  1515 -1250))
+      (outline (path signal 50  1515 -1250  1515 1250))
+      (outline (path signal 50  1515 1250  -1515 1250))
+      (outline (path signal 50  -1515 1250  -1515 -1250))
+      (outline (path signal 200  -1667.04 630  -1718.52 540.837  -1821.48 540.837  -1872.96 630
+            -1821.48 719.163  -1718.52 719.163  -1667.04 630))
+      (outline (path signal 127  -300 1000  300 1000))
+      (outline (path signal 127  -300 -1000  300 -1000))
+      (outline (path signal 200  -1667.04 630  -1718.52 540.837  -1821.48 540.837  -1872.96 630
+            -1821.48 719.163  -1718.52 719.163  -1667.04 630))
+      (pin Rect[T]Pad_700x700_um 2 -915 -550)
+      (pin Rect[T]Pad_700x700_um 1 -915 550)
+      (pin Rect[T]Pad_700x700_um 4 915 550)
+      (pin Rect[T]Pad_700x700_um 3 915 -550)
+    )
+    (image Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder::1
+      (outline (path signal 100  -800 -400  -800 400))
+      (outline (path signal 100  -800 400  800 400))
+      (outline (path signal 100  800 400  800 -400))
+      (outline (path signal 100  800 -400  -800 -400))
+      (outline (path signal 120  -171.267 510  171.267 510))
+      (outline (path signal 120  -171.267 -510  171.267 -510))
+      (outline (path signal 50  -1650 -730  -1650 730))
+      (outline (path signal 50  -1650 730  1650 730))
+      (outline (path signal 50  1650 730  1650 -730))
+      (outline (path signal 50  1650 -730  -1650 -730))
+      (pin RoundRect[T]Pad_1050x950_238.404_um 2 875 0)
+      (pin RoundRect[T]Pad_1050x950_238.404_um 1 -875 0)
+    )
+    (image MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom
+      (outline (path signal 50  3050 0  2967.79 -703.378  2725.58 -1368.84  2336.44 -1960.5
+            1821.33 -2446.48  1208.04 -2800.56  529.627 -3003.66  -177.342 -3044.84
+            -874.75 -2921.87  -1525 -2641.38  -2093.04 -2218.49  -2548.24 -1676
+            -2866.06 -1043.16  -3029.38 -354.083  -3029.38 354.083  -2866.06 1043.16
+            -2548.24 1676  -2093.04 2218.49  -1525 2641.38  -874.75 2921.87
+            -177.342 3044.84  529.627 3003.66  1208.04 2800.56  1821.33 2446.48
+            2336.44 1960.5  2725.58 1368.84  2967.79 703.378  3050 0))
+      (outline (path signal 150  2800 0  2718.64 -670.084  2479.28 -1301.22  2095.83 -1856.74
+            1590.58 -2304.36  992.894 -2618.05  337.503 -2779.59  -337.503 -2779.59
+            -992.894 -2618.05  -1590.58 -2304.36  -2095.83 -1856.74  -2479.28 -1301.22
+            -2718.64 -670.084  -2800 0  -2718.64 670.084  -2479.28 1301.22
+            -2095.83 1856.74  -1590.58 2304.36  -992.894 2618.05  -337.503 2779.59
+            337.503 2779.59  992.894 2618.05  1590.58 2304.36  2095.83 1856.74
+            2479.28 1301.22  2718.64 670.084  2800 0))
+      (pin Round[B]Pad_5600_um 1 0 0)
+      (pin Round[T]Pad_5600_um 1@1 0 0)
+      (pin Round[A]Pad_3600_um 1@2 0 0)
+    )
+    (padstack Round[B]Pad_5600_um
+      (shape (circle B.Cu 5600))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1300_um
+      (shape (circle F.Cu 1300))
+      (shape (circle B.Cu 1300))
+      (attach off)
+    )
+    (padstack Round[A]Pad_3600_um
+      (shape (circle F.Cu 3600))
+      (shape (circle B.Cu 3600))
+      (attach off)
+    )
+    (padstack Round[T]Pad_5600_um
+      (shape (circle F.Cu 5600))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_1050x950_238.404_um
+      (shape (polygon F.Cu 0  328.898 472.282  369.039 461.526  406.702 443.964  440.743 420.128
+            470.128 390.743  493.964 356.702  511.526 319.039  522.282 278.898
+            525.904 237.5  525.904 -237.5  522.282 -278.898  511.526 -319.039
+            493.964 -356.702  470.128 -390.743  440.743 -420.128  406.702 -443.964
+            369.039 -461.526  328.898 -472.282  287.5 -475.904  -287.5 -475.904
+            -328.898 -472.282  -369.039 -461.526  -406.702 -443.964  -440.743 -420.128
+            -470.128 -390.743  -493.964 -356.702  -511.526 -319.039  -522.282 -278.898
+            -525.904 -237.5  -525.904 237.5  -522.282 278.898  -511.526 319.039
+            -493.964 356.702  -470.128 390.743  -440.743 420.128  -406.702 443.964
+            -369.039 461.526  -328.898 472.282  -287.5 475.904  287.5 475.904
+            328.898 472.282))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_700x700_um
+      (shape (rect F.Cu -350 -350 350 350))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins U3-2 U2-2 C3-2 C2-2 J2-3 J1-3 U1-2 C1-2)
+    )
+    (net +5V
+      (pins U3-4 U2-4 C3-1 C2-1 J2-1 J1-1 U1-4 C1-1)
+    )
+    (net /IN
+      (pins J1-2 U1-3)
+    )
+    (net /OUT
+      (pins U3-1 J2-2)
+    )
+    (net "Net-(U1-Pad1)"
+      (pins U2-3 U1-1)
+    )
+    (net "Net-(U2-Pad1)"
+      (pins U3-3 U2-1)
+    )
+    (class kicad_default "" +5V /IN /OUT GND "Net-(U1-Pad1)" "Net-(U2-Pad1)"
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
